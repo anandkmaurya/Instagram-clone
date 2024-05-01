@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/990b9f6ffa.js" crossorigin="anonymous"></script>
+    <title>APK</title>
+</head>
+<body>
+    <aside>
+        <div class="apk">
+            <img src="instagram-new.webp" alt="">
+    </div>
+        <div class="container">
+            <ul>
+                <li onclick="closePopup()"><i class="fa-solid fa-house"></i><a>Home</a></li>
+                <li id="searchButton" ><i class="fa-solid fa-magnifying-glass"></i><a>Search</a></li>
+                <li><i class="fa-regular fa-compass"></i><a>Explore</a></li>
+                <li><i class="fa-solid fa-play"></i><a>Reels</a></li>
+                <li id="chatButton"><i class="fa-brands fa-facebook-messenger"></i><a>Messages</a></li>
+                <li><i class="fa-regular fa-heart"></i><a>Notifications</a></li>
+                <li><i class="fa-regular fa-square-plus"></i><a>Create</a></li>
+                <li onclick="openPopup()"><i class="fa-regular fa-user"></i><a>Profile</a></li>
+                <li><i class="fa-solid fa-bars"></i><a>More</a></li>
+            </ul>
+        </div>
+    </aside>
+    <nav id="navPopup" class="navbar">
+        <box class="box">
+            <div class="story">
+                 <div class="circle">
+                <img src="pick.png" alt="">
+                  </div>
+                 <a>anandm...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandm...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandm...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandm...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandmau...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandmau...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandmau...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandmau...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandmau...</a>
+             </div>
+            <div class="story">
+                 <div class="circle">
+                
+                  </div>
+                 <a>anandmau...</a>
+             </div>
+        </box>
+        <card class="card">
+            <div class="card-box">
+                <div class="profile">
+                    <img src="pick.png" alt="">
+                </div>
+                <div class="content">
+                    <a><b>anandmaurya73</b><span>.</span> 17h</a>
+                    <p>Greater Noida Industrial Area</p>
+                </div>
+                <div class="more">
+                    <img src="more2.png" >
+                </div>
+            </div>
+            <div class="main-content">
+                <img src="temple.jpg" alt="">
+            </div>
+            <div class="bottom-content">
+                <div class="action">
+                    <i  class="fa-regular fa-heart" id="clickButton"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <img src="share" alt="">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <p><span id="clickCount">0</span>likes</p>
+                <a><span>anandmaurya73 </span>सारी दुनिया उजड़ चुकी है,</a>
+                <p>View 1 comment</p>
+                <div class="comment">
+                    <input type="text" placeholder="Add a comment...">
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+            </div>
+
+        </card>
+        <card class="card">
+            <div class="card-box">
+                <div class="profile">
+                    <img src="pick.png" alt="">
+                </div>
+                <div class="content">
+                    <a><b>anandmaurya73</b><span>.</span> 17h</a>
+                    <p>Greater Noida Industrial Area</p>
+                </div>
+                <div class="more">
+                    <img src="more2.png" >
+                </div>
+            </div>
+            <div class="main-content">
+                <img src="temple.jpg" alt="">
+            </div>
+            <div class="bottom-content">
+                <div class="action">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <img src="share" alt="">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <p><span>2344</span>likes</p>
+                <a><span>anandmaurya73 </span>सारी दुनिया उजड़ चुकी है,</a>
+                <p>View 1 comment</p>
+                <div class="comment">
+                    <input type="text" placeholder="Add a comment...">
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+            </div>
+
+        </card>
+        <card class="card">
+            <div class="card-box">
+                <div class="profile">
+                    <img src="pick.png" alt="">
+                </div>
+                <div class="content">
+                    <a><b>anandmaurya73</b><span>.</span></a>
+                    <p>Greater Noida Industrial Area</p>
+                </div>
+                <div class="more">
+                    <img src="more2.png" >
+                </div>
+            </div>
+            <div class="main-content">
+                <img src="temple.jpg" alt="">
+            </div>
+            <div class="bottom-content">
+                <div class="action">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <img src="share" alt="">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <p><span>2344</span>likes</p>
+                <a><span>anandmaurya73 </span>सारी दुनिया उजड़ चुकी है,</a>
+                <p>View 1 comment</p>
+                <div class="comment">
+                    <input type="text" placeholder="Add a comment...">
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+            </div>
+
+        </card>
+
+
+    </nav>
+    <side id="sidePopup" class="sidebar">
+        <div class="main-profile">
+            <div class="main-profile-logo" onclick="openPopup()">
+                <img src="pick.png" alt="" >
+            </div>
+            <div class="main-profile-content">
+                <a onclick="openPopup()">anandmaurya73</a>
+                <p>Anand Maurya</p>
+            </div>
+            <div class="main-profile-switch">
+                <a>Switch</a>
+            </div>
+        </div>
+        <div class="suggested">
+            <p>Suggested for you</p>
+            <a>See All</a>
+        </div> 
+        <div class="other-profile">
+            <div class="other-profile-logo">
+                <img src="pick.png" alt="">
+            </div>
+            <div class="other-profile-content">
+                <a>anandmaurya73</a>
+                <p>Suggested for you</p>
+            </div>
+            <div class="other-profile-follow">
+                <a>Follow</a>
+            </div>
+        </div>
+        <div class="other-profile">
+            <div class="other-profile-logo">
+                <img src="pick.png" alt="">
+            </div>
+            <div class="other-profile-content">
+                <a>anandmaurya73</a>
+                <p>Suggested for you</p>
+            </div>
+            <div class="other-profile-follow">
+                <a>Follow</a>
+            </div>
+        </div>
+        <div class="other-profile">
+            <div class="other-profile-logo">
+                <img src="pick.png" alt="">
+            </div>
+            <div class="other-profile-content">
+                <a>anandmaurya73</a>
+                <p>Suggested for you</p>
+            </div>
+            <div class="other-profile-follow">
+                <a>Follow</a>
+            </div>
+        </div>
+        <div class="other-profile">
+            <div class="other-profile-logo">
+                <img src="pick.png" alt="">
+            </div>
+            <div class="other-profile-content">
+                <a>anandmaurya73</a>
+                <p>Suggested for you</p>
+            </div>
+            <div class="other-profile-follow">
+                <a>Follow</a>
+            </div>
+        </div>
+        <div class="other-profile">
+            <div class="other-profile-logo">
+                <img src="pick.png" alt="">
+            </div>
+            <div class="other-profile-content">
+                <a>anandmaurya73</a>
+                <p>Suggested for you</p>
+            </div>
+            <div class="other-profile-follow">
+                <a>Follow</a>
+            </div>
+        </div>
+    </side>
+
+<div id="myPopup" class="main-account">
+    <div class="account">
+        <div class="account-logo">
+            <img src="pick.png" alt="">
+        </div>
+        <div class="account-data">
+            <div class="account-id">
+                <a>anandmaurya73</a>
+                <button>Edit profile</button>
+                <button>View archive</button>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="account-count">
+                <a><span>23 </span> post</a>
+                <a><span>150 </span> followers</a>
+                <a><span>178 </span> following</a>
+            </div>
+            <div class="account-desc">
+                <a>Anand Maurya</a>
+                <p>Life is a journey ❣️🛤️ I m Traveler🚶🏻‍♂️🛤️</p>
+            </div>
+        </div>
+    </div>
+    <div class="highlight">
+    <div class="highlight-circle">
+        <img src="pick.png" alt="">
+        <a><center>#Dewali</center></a>
+    </div>
+    <div class="highlight-circle">
+        <img src="pick.png" alt="">
+        <a><center>#</center></a>
+    </div>
+    <div class="highlight-circle">
+        <img src="pick.png" alt="">
+        
+        <a><center>@</center></a>
+    </div>
+</div>
+<div class="menu">
+    <a><i class="fa-solid fa-table-cells"></i> POST</a>
+    <a><i class="fa-solid fa-play"></i> REELS</a>
+    <a><i class="fa-regular fa-bookmark"></i> SAVED</a>
+    <a><i class="fa-solid fa-user-tag"></i> TAGGED</a>
+</div>
+<section>
+<div class="post">
+    <div class="post-card">
+        <img src="pick.png" alt="">
+    </div>
+    <div class="post-card">
+        <img src="pick.png" alt="">
+    </div>
+    <div class="post-card">
+        <img src="pick.png" alt="">
+    </div>    
+    <div class="post-card">
+        <img src="pick.png" alt=""> 
+    </div>    
+    <div class="post-card">
+        
+    </div>    
+</div>
+</section>
+</div>
+
+<div id="searchBox" class="search">
+    <div class="upper">
+    <h2>Search</h2>
+    <input type="text" placeholder="Search">
+</div>
+<div class="medium">
+    <a>Recent</a>
+    <p>Clear All</p>
+
+</div>
+</div>
+
+<div id="myChat" class="chat">
+    <div id="messageBox" class="message">
+        <div class="top">
+            <h2>anandmaurya73</h2>
+            <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+        <div class="top-2">
+            <a>Messages</a>
+            <p>Requests</p>
+        </div>
+        <div class="message-card">
+            <div class="message-logo">
+        
+            </div>
+            <div class="message-content">
+                <a>Anand Maurya</a>
+                <p>Active 40 minutes ago</p>
+            </div>
+        </div>
+        <div class="message-card">
+            <div class="message-logo">
+        
+            </div>
+            <div class="message-content">
+                <a>Anand Maurya</a>
+                <p>Active 40 minutes ago</p>
+            </div>
+        </div>
+        <div class="message-card">
+            <div class="message-logo">
+        
+            </div>
+            <div class="message-content">
+                <a>Anand Maurya</a>
+                <p>Active 40 minutes ago</p>
+            </div>
+        </div>
+    </div>
+    <div class="chat-message">
+        <div class="chat-circle">
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </div>
+    <a >Your Messages</a>
+    <p>Send private photos and messages to a friend or group</p>
+    <button>Send Message</button>
+
+    </div>
+</div>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

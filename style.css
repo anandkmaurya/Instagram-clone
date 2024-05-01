@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+}
+aside{
+    background: #ffffff;
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid #cbcbcb;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+aside .apk{
+    width: 20%;
+    height: 100px;
+}
+aside .apk img{
+    width: 300%;
+    height: 100px;
+    cursor: pointer;
+}
+.container ul{
+    list-style: none;
+}
+.container ul li{
+    background: #ffffff;/* 
+    margin: 10px 70px 10px 50px; */
+    display: flex;
+    padding:  15px 10px 10px 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    transition: background 0.5s ease;
+}
+.container ul li a{
+    margin-top: 5px;
+}
+ul li:hover{
+    background: #e1e1e1;
+    cursor: pointer;
+}
+.container ul li i{
+    font-size: 23px;
+    margin: 2px 25px 2px 25px;
+}
+.navbar{
+    height: 100vh;
+    width: 50%;
+    background: #ffffff;
+    position: relative;
+    left: 20%;
+    display: block;
+}
+.navbar .box{
+    margin: 15px;
+    height: 100px;
+    width: 95%;
+    display: flex;
+    background: #ffffff;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap;
+}
+.navbar .box::-webkit-scrollbar {
+    display: none;
+}
+.story{
+    position: relative;
+
+}
+.circle{
+    margin: 10px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgb(207, 4, 89), rgb(255, 221, 0));
+}
+.circle img{
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.story a{
+    position:absolute;
+    bottom: 0;
+    left: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar .card{
+    margin-top: 10px ;
+    width: 80%;
+    height: 600px;
+    background: #ffffff;
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    border-bottom:1.5px solid #b3b3b3 ;
+}
+.navbar .card .card-box{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #ffffff;
+    position: absolute;
+}
+.navbar .card .card-box .profile{
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background: #c02727;
+    left: 0;
+}
+.navbar .card .card-box .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.navbar .card .card-box .content{
+    margin: 6px;
+    position: absolute;
+    left: 50px;
+}
+.navbar .card .card-box .content a span{ 
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+.navbar .card .card-box .more{
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 2px;
+}
+.navbar .card .card-box .more img{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+.navbar .card .main-content{
+    width: 90%;
+    height: 500px;
+    margin: 10% 5% 5% 5%;
+    position: absolute;
+}
+.navbar .card .main-content img{
+    width: 100%;
+    height: 500px;
+}
+.navbar .card .bottom-content{
+    width: 100%;
+    height: 135px;
+    position: absolute;
+    background: #ffffff;
+    bottom: 0;
+}
+.navbar .card .bottom-content .action{
+    margin: 10px 10px 0 10px;
+}
+.navbar .card .bottom-content .action i{
+    margin: 0 10px 10px 10px;
+    font-size: 25px;
+}
+.heartClicked {
+    color: red;
+}
+.navbar .card .bottom-content .action i:hover{
+    cursor: pointer;
+}
+.navbar .card .bottom-content .action img{
+    width: 20px;
+    height: 20px;
+}
+.navbar .card .bottom-content .action .fa-bookmark{
+    position: absolute;
+    right: 0;
+}
+.navbar .card .bottom-content p{
+    margin-left: 20px;
+}
+.navbar .card .bottom-content a{
+    margin-left: 20px;
+}
+.navbar .card .bottom-content .comment{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .card .bottom-content .comment input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin: 5px;
+    padding: 3px;
+}
+.navbar .card .bottom-content .comment i{
+    margin: 10px 20px 0px 0px ;
+}
+
+
+.sidebar{
+    height: 700px;
+    width: 30%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+.sidebar .main-profile{
+    margin: 15px;
+    margin-left: 45px;
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar .main-profile .main-profile-logo img{
+    margin-left: 20px;
+    margin-top:20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sidebar .main-profile .main-profile-content{
+    margin: 25px;
+}
+.sidebar .main-profile .main-profile-content a{
+    cursor: pointer;
+}
+.sidebar .main-profile .main-profile-switch{
+    margin-top: 30px;
+    position: absolute;
+    right: 10px;
+}
+.sidebar .main-profile .main-profile-switch a{
+    color: #3e98ff;
+    font-weight: 600;
+}
+.sidebar .suggested{
+    margin-left: 45px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar .suggested p{
+    color: #6b6b6b;
+    font-weight: 500;
+}
+.sidebar .other-profile{
+    margin-left: 45px;
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar .other-profile .other-profile-logo img{
+    margin-left: 20px;
+    margin-top:10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sidebar .other-profile .other-profile-content{
+    margin: 15px;
+}
+.sidebar .other-profile .other-profile-content p{
+    font-size: 12px;
+    color: #6b6b6b;    
+}
+
+.sidebar .other-profile .other-profile-follow{
+    margin-top: 20px;
+    position: absolute;
+    right: 10px;
+}
+.sidebar .other-profile .other-profile-follow a{
+    color: #3e98ff;
+    font-weight: 600;
+}
+
+.main-account{
+    width: 80%;
+    height: 100vh;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    display: none;
+}
+.account{
+    display: flex;
+    flex-direction: row;
+}
+.account .account-logo{
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+.account .account-logo img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.account .account-data{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 200px;
+    top: 35px;
+}
+.account .account-data .account-id{
+    display: flex;
+    flex-direction: row;
+}
+.account .account-data .account-id a{
+    font-size: 19px;
+    color: #000;
+    margin: 10px;
+}
+.account .account-data .account-id button{
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #e8e8e8;
+}
+.account .account-data .account-id i{
+    margin: 5px;
+    padding: 5px;
+    font-size: 22px;
+}
+.account .account-data .account-count{
+    margin: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.account .account-data .account-count a{
+    font-size: 16px;
+    color: #000;
+    margin: 10px 20px 10px 10px;
+}
+.account .account-data .account-count a span{
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+}
+.account .account-data .account-desc{
+    display: flex;
+    flex-direction: column;
+}
+.account .account-data .account-desc a{
+    margin: 10px 10px 0px 10px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.account .account-data .account-desc p{
+    margin-left:10px ;
+    font-size: 14px;
+    color: #000;
+}
+.main-account .highlight{
+    background: #ffffff;
+    width: 90%;
+    height: 170px;
+    top: 60px;
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #b4b4b4;
+}
+.main-account .highlight .highlight-circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 20px;
+    border: 2px solid rgba(197, 193, 193, 0.623);
+}
+.main-account .highlight .highlight-circle img{
+    width:86px;
+    height: 86px;
+    border-radius: 50%;
+}
+.main-account .highlight .highlight-circle a{
+    font-size: 12px;
+    
+}
+.main-account .menu{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 70px;
+    justify-content: center;
+    margin: 10px;
+}
+.main-account .menu a{
+    margin: 0px 20px 0px 20px;
+    font-size: 14px;
+}
+.main-account section{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 100;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-account .post{
+    width: 95%;
+    height: 100;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main-account .post .post-card{
+    width: 96%;
+    height: 300px;
+    background: #fefefe;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-account .post .post-card img{
+    display: flex;
+    width: 96%;
+    height: 300px;   
+}
+
+.search{
+    display: none;
+    width: 30%;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 20%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.search .upper{
+    padding: 25px;
+    border-bottom: 1px solid #c2c2c2;
+}
+.search .upper input{
+    margin-top: 30px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    background: #e9e7e7;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search .medium{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search .medium a{
+    font-size: 18px;
+}
+.search .medium p{
+    color: #3e98ff;
+    font-size: 18px;
+}
+.chat{
+    display: none;
+}
+.message{
+    display: block;
+    width: 30%;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 20%;
+    border-right: 1px solid #d6d5d5;
+}
+.message .top{
+    padding: 25px;
+    border-bottom: 1px solid #c2c2c2;
+    display: flex;
+    justify-content: space-between;
+}
+.message .top i{
+    font-size: 23px;
+}
+.message .top-2{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.message .message-card{
+    width: 90%;
+    height: 70px;
+    background: #ffffff;
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.message .message-card:hover{
+    cursor: pointer;
+    background: #e1e1e1;
+    transition: background 0.5s ease;
+}
+.message .message-card .message-logo{
+    height: 50px;
+    width: 50px;
+    background: #b4b4b4;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+}
+.message .message-card .message-content{
+    margin: 15px;
+}
+.message .message-card .message-content p{
+    font-size: 12px;
+    color: #6c6c6c;
+    margin-top: 5px;
+}
+
+.chat .chat-message{
+        width: 50%;
+        height: 100vh;
+        background: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.chat .chat-message .chat-circle{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat .chat-message .chat-circle i{
+    font-size: 50px;
+}
+.chat .chat-message a{
+    margin: 15px;
+    font-size: 22px;
+    color: #252525;
+}
+.chat .chat-message p{
+    font-size: 15px;
+    color: #6c6b6b;
+    margin: 5px;
+}
+.chat .chat-message button{
+    height: 35px;
+    width: 125px;
+    border-radius: 10px;
+    border: none;
+    background: #3e98ff;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 5px;
+}
